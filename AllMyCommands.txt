@@ -1,0 +1,18 @@
+git init
+git add first.txt
+git add second.txt
+git add third.txt
+git commit -m "commit after adding"
+git rm -rf second.txt
+git checkout HEAD second.txt
+git remote add origin https://github.com/ahmedashour95/Sprint0.git
+git push origin -u master
+git checkout -b "ReadMe"
+git add README.md
+git commit -m "adding readme"
+git push -u origin ReadMe
+git checkout master
+git merge ReadMe
+git add AllMyCommands.txt
+git commit -m "adding all my commands and readme"
+git push -u origin master 
